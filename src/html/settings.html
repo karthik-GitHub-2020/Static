@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Vidhyaan :: First Search Education Portal</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+ 
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  
+  <link href="../assets/css/adminstyles.css" rel="stylesheet">
+  
+</head>
+<body>
+<div id="page-container" class="sidebar-partial sidebar-no-animations sidebar-visible-lg">
+	<div id="sidebar">
+		<div class="logo">
+			<h1> <img src="../assets/img/smallLogo.jpg" width="60px" /><span>VIDHYAAN</span></h1>					
+		</div>
+		<div class="sideprofile">
+			<!--<img src="../assets/img/img_avatar.png" alt="Avatar" class="avatar"> <p>Vimal</p>-->
+		</div>
+		<nav class="navbar">
+		  <!-- Links -->
+		  <ul class="navbar-nav">	
+			<li class="nav-item ">
+			  <a class="nav-link " href="admmgmt.html" ><i class="fas fa-clipboard-list"></i><p>Admission Mgmt.</p></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="dashboard.html"><i class="fa fa-th-large" aria-hidden="true" style="font-size: 1.2rem;margin-top: 3px;"></i><p>Dashboard</p></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="online_admission.html"><i class="fas fa-globe" aria-hidden="true" style="font-size: 1.2rem;margin-top: 3px;"></i><p>Online Admission</p></a>
+			</li>	
+			<li class="nav-item">
+			  <a class="nav-link" href="feesmanagement.html"><i class="fas fa-receipt"></i><p>Fees Management</p></a>
+			</li>
+			<li class="nav-item ">
+			  <a class="nav-link" href="reports.html"><i class="fa fas fa-chart-bar" aria-hidden="true"></i><p>Reports</p></a>
+			</li>
+			<li class="nav-item ">
+			  <a class="nav-link" href="impexp.html"><i class="fas fa-exchange-alt" aria-hidden="true" style="transform: rotate(90deg)"></i><p>Import/Export</p></a>
+			</li>
+			<li class="nav-item active">
+			  <a class="nav-link" href="settings.html"><i class="fas fa-cog"></i><p>Settings</p></a>
+			</li>
+		  </ul>
+		</nav>
+	</div>	
+	<div id="main-container">
+		<header>
+			<div class="dispflex">
+				<!--<div id="togglebtn">
+					<button><i class="fa fa-bars" aria-hidden="true"></i></button>
+				</div>-->
+
+				<div class="profile">
+					<div class="top-menu">
+						<ul class="nav navbar-nav pull-right">
+							<li>
+								<span class="fa-stack" data-count="28">
+								  <i class="far fa-bell" style="font-size:1.1rem"></i>								  
+								</span>
+							</li>
+							<li class="addropdown">
+								<span class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+									<img alt="" class="avatar" src="../assets/img/img_avatar.png">
+									<span class="username username-hide-on-mobile"> Vimal</span>
+									<i class="fa fa-angle-down"></i>
+								</span>							
+								<div class="addropdown-content wow bounceIn">
+									<div class="arrow-up"></div>
+									<div class="addropmenu">
+										<a href="#"><i class="fa fa-user pr-2" aria-hidden="true"></i>Profile</a>
+										<a href="#"><i class="fa fa-cog pr-2" aria-hidden="true"></i>Settings</a>
+										<a href="#"><i class="fas fa-sign-out-alt pr-2"></i>Logout</a>
+									</div>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+					<!--<div class="lastlog" id="lastlog"></div>-->
+				</div>
+			</div>
+		</header>
+		<div class="pgwrapper" id="pgwrapper">
+		<div id="page-content">		
+							
+			<h1 class="hdrtitle">Settings</h1>
+			
+			<div class="row mt-4">
+				<div class="col-lg-12">
+					<div class="widjet">
+						<div class="widjethdr dispflex">
+							<div style="width:90%;">
+								<span class="iconsect blubg" style="padding-left:11px"><i class="fas fa-hand-point-up"></i></span>
+								<h1>Subscription / Plan Details</h1>
+							</div>
+						</div>	
+						<div class="p-3 mt-3 widjetcontent">
+							<div style="width:60%;margin:0 auto;">
+							<div class="row mt-2 row-eq-height">	
+								<div class="col-sm-6">
+									<div class="card subscriptioncard bluegrd">
+										<div class="card-body">
+											<h5 class="card-title">Subscription/Plan</h5>
+											<h1>Subscription Id
+											<span>201345678</span>
+											</h1>
+											<h1>Plan Name
+											<span>Admission Management</span>
+											</h1>
+											<h1>No. of Users
+											<span>15</span>
+											</h1>
+											<h1>Total / Month / Year
+											<span>18,000</span>
+											</h1>											
+										  </div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="card subscriptioncard graygrd">
+										<div class="card-body">
+											<h5 class="card-title">Payment Details</h5>
+											<div class="form-row ">
+												<div class="form-group input-group col-md-12 mt-2">						
+													<span class="has-float-label">
+														<input list="ptmtermslist" value="" class="form-control form-input" id="ptmtermslistid" placeholder="Payment Terms" required="required">
+														<label for="ptmtermslistid">Payment Terms <span class="required">*</span></label>
+														<datalist id="ptmtermslist">
+															<option value="Monthly">Monthly</option>
+															<option value="Yearly">Yearly</option>										
+														</datalist>
+													</span>
+												</div>
+												<div class="form-group input-group col-md-12 mt-2">						
+													<span class="has-float-label">
+														<input type="date" name="psDate" value="" class="form-control form-input" id="psdid" placeholder="Plan Start Date" required="required">
+														<label for="psdid">Plan Start Date <span class="required">*</span></label>
+													</span>
+												</div>
+												<div class="form-group input-group col-md-12 mt-2">						
+													<span class="has-float-label">
+														<input type="date" name="peDate" value="" class="form-control form-input" id="pedid" placeholder="Plan End Date" required="required">
+														<label for="pedid">Plan End Date <span class="required">*</span></label>
+													</span>
+												</div>
+												<div class="form-group input-group col-md-12 " style="border-bottom:1px solid #e5e5e5">	
+													<div style="width:100%"><label style="color:#6c757d" class="mr-3">Payment Method<span class="required">*</span></label>	</div>				
+														<label class="custradio" style="margin-right:10px;">Cash
+														  <input type="radio" name="radio">
+														  <span class="checkmark"></span>
+														</label>
+														<label class="custradio" style="margin-right:10px;">N/B
+														  <input type="radio" name="radio">
+														  <span class="checkmark"></span>
+														</label>
+														<label class="custradio" style="margin-right:10px;">Card
+														  <input type="radio" name="radio">
+														  <span class="checkmark"></span>
+														</label>
+													</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>	
+						
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		
+		</div>
+		<footer>
+			&copy; Vidhyaan.
+		</footer>
+	</div>
+</div>
+<script src="../assets/js/adminscript.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="../assets/js/stuadmission.js"></script>
+</body>
+</html>

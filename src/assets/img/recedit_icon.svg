@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="96px" height="96px" viewbox="0 0 96 96" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <image width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABHNCSVQICAgIfAhkiAAAA/5JREFUeJztnb+LFVcUx893X0oLixQWKVNYrLCinRuwFVJskcKAhaWFhZaCf0AgyOY/sNDOBQuLTRnIFqYIEWIhpEjhgoWFgQgR9J6vhfNws74fd+aeO2dmPJ9y9717z3w/b+be92bujEgQBEEQBEEQBJ8bsG6Q5CkRuayq5wBsAdi07mNN/29E5CnJxxsbG7+LyH0A7/qswQ2SO6r6kgNCVf8gueWdTXVSSj96h70MVX1L8rp3RtUgueMdciY3vLM6TvEYQPIUyT8BfGlRUA/cBPCTdxFzNgzauDyi8EVEdoe0JxQLUNVzFoX0zGAkFAsAMNYZxiAkWIwBtCjEEdcxwWIMGDuue0II+ICbhBDwERcJIeD/9C4hBHxKrxJCwGJ6kxACltOLhBCwmuoSQsB6qkoIAXlUkxAC8qkiIQS0w1xCCGiPqYT4NbQDJN8B+AbA49K2QkBHSD4DcBbAm5J24hDUEQCnRaT4SosQUADJC6VthIAyzpc2EGNAIQCKMow9wJkQ4EwIcCYEOBMCnAkBzoQAZ0KAMyHAmRDgTAhwJgQ4EwKcCQHOhABnQoAzX3gXUBuShyT3mvtGPAHwdM3rN0Vkq7nXxXcAvuqn0o7UX9zenZTSXZInC7btZNPGUiyz7FrkULliuI07qvrvok6s+igpbnCklO5W2M7tRRJK253cSXmShwDOAPinQtvbJPcBnJj/LU7KH4PkXo3wRUQAHAC4RPK1VZuTE9DMdqphLWFyAkTkSe0OLCVMTkDGPP+8qu4fH0xV9aWqPiJ5MbOfAwCXbKouoN5cphvr6l0U/gJ6Wyc8uVnQullJi3p7uYvK5A5BhsQ64QEQ64QHQKwTtoRkly9psU7YkIOO74t1wjmQPL3q/wDuFDQf64QzWLlsCMAvqvpDQfumEiYnIOc+prPZ7JaqlszxB3HLSxEZ3jdhVX3OzLNgKaXdwu78JViEZk2bEzKjl2CSWB2+zd2GUUswiaoCzenD7dztGK0Ei7Bq8VlIsAiqJpOXYBFSbSYtwSKgPpisBItw+mKSElT1L4tw+sJBwsrpsMVPEdWvQrAEwAmS+7kSZrPZza4/W5DcE5GfV73G4hEmv5W20Td9SOCHC8S+r/4UP5JfL7twdejUOhyp6gOSn1z6z8xLXlpD8lrNoGpiLWFZ+EfeV2dgbjoeJVYSMsKfU0cCyRuq+l/twGpQKqFF+HOu2abfQHIzpbSrqr+ObWzoKqFD+Gw+qCtPnwYZkLzaNvwjEh561Dx5WsyWXnjXOjnafnP2rndSsOVzlVX1b++aJ0ebPSCldM+73kmSOQC/IjnsReBjhuTt5ln2y8LPvmgg6AjJLVV9pKov5sf8lNK9o5/8972LFJgg4ELIAAAAAElFTkSuQmCC" id="img_1" />
+  </defs>
+  <g id="Group-4">
+    <path d="M0 48C0 21.4903 21.4903 0 48 0C74.5097 0 96 21.4903 96 48C96 74.5097 74.5097 96 48 96C21.4903 96 0 74.5097 0 48Z" id="Ellipse-Copy-2" fill="#0782D8" fill-rule="evenodd" stroke="none" />
+    <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="matrix(0.5416667 0 0 0.5416667 22 22)" />
+  </g>
+</svg>

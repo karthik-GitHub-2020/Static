@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Vidhyaan :: First Search Education Portal</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+ 
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  
+  <link href="../assets/css/adminstyles.css" rel="stylesheet">
+  
+</head>
+<body>
+<div id="page-container" class="sidebar-partial sidebar-no-animations sidebar-visible-lg">
+	<div id="sidebar">
+		<div class="logo">
+			<h1> <img src="../assets/img/smallLogo.jpg" width="60px" /><span>VIDHYAAN</span></h1>					
+		</div>
+		<div class="sideprofile">
+			<!--<img src="../assets/img/img_avatar.png" alt="Avatar" class="avatar"> <p>Vimal</p>-->
+		</div>
+		<nav class="navbar">
+		  <!-- Links -->
+		   <ul class="navbar-nav">	
+			<li class="nav-item">
+			  <a class="nav-link " href="admmgmt.html" ><i class="fas fa-clipboard-list"></i><p>Admission Mgmt.</p></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="dashboard.html"><i class="fa fa-th-large" aria-hidden="true" style="font-size: 1.2rem;margin-top: 3px;"></i><p>Dashboard</p></a>
+			</li>
+			<li class="nav-item active">
+			  <a class="nav-link" href="online_admission.html"><i class="fas fa-globe" aria-hidden="true" style="font-size: 1.2rem;margin-top: 3px;"></i><p>Online Admission</p></a>
+			</li>	
+			<li class="nav-item">
+			  <a class="nav-link" href="feesmanagement.html"><i class="fas fa-receipt"></i><p>Fees Management</p></a>
+			</li>
+			<li class="nav-item ">
+			  <a class="nav-link" href="reports.html"><i class="fa fas fa-chart-bar" aria-hidden="true"></i><p>Reports</p></a>
+			</li>
+			<li class="nav-item ">
+			  <a class="nav-link" href="impexp.html"><i class="fas fa-exchange-alt" aria-hidden="true" style="transform: rotate(90deg)"></i><p>Import/Export</p></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="settings.html"><i class="fas fa-cog"></i><p>Settings</p></a>
+			</li>
+		  </ul>
+
+		</nav>
+	</div>	
+	<div id="main-container">
+		<header>
+			<div class="dispflex">
+				<!--<div id="togglebtn">
+					<button><i class="fa fa-bars" aria-hidden="true"></i></button>
+				</div>-->
+
+				<div class="profile">
+					<div class="top-menu">
+						<ul class="nav navbar-nav pull-right">
+							<li>
+								<span class="fa-stack" data-count="28">
+								  <i class="far fa-bell" style="font-size:1.1rem"></i>								  
+								</span>
+							</li>
+							<li class="addropdown">
+								<span class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+									<img alt="" class="avatar" src="../assets/img/img_avatar.png">
+									<span class="username username-hide-on-mobile"> Vimal</span>
+									<i class="fa fa-angle-down"></i>
+								</span>							
+								<div class="addropdown-content wow bounceIn">
+									<div class="arrow-up"></div>
+									<div class="addropmenu">
+										<a href="#"><i class="fa fa-user pr-2" aria-hidden="true"></i>Profile</a>
+										<a href="#"><i class="fa fa-cog pr-2" aria-hidden="true"></i>Settings</a>
+										<a href="#"><i class="fas fa-sign-out-alt pr-2"></i>Logout</a>
+									</div>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+					<!--<div class="lastlog" id="lastlog"></div>-->
+				</div>
+			</div>
+		</header>
+		<div class="pgwrapper" id="pgwrapper">
+		<div id="page-content">		
+							
+			<h1 class="hdrtitle">Online Admission</h1>
+			
+			<div class="row mt-4">				
+				<div class="col-lg-12">
+					<div class="widjet">
+						<div class="widjethdr dispflex">
+							<div style="width:auto">
+								<span class="iconsect blubg" style="padding-left:6px;"><i class="fas fa-users"></i></span>
+								<h1>Candidates Details</h1>
+							</div>
+							<div class="mt-2 mr-2">
+								<button class="btn gry_bg" >
+									<i class="fas fa-search"></i>
+								</button>								
+								<button class="btn gry_bg tooltipt" onclick="createnew()">
+									<i class="fas fa-id-badge"></i>
+									<span class="tooltiptext">Create Candidate</span>									
+								</button>
+							</div>
+							
+						</div>	
+						<div class=" widjetcontent tbllist">								
+								
+								<div class="restable ">    
+									
+									<div class="resrow resheader">
+										<div class="cell">
+											S.No.
+										</div>
+										<div class="cell">
+											Candidate Name
+										</div>
+										<div class="cell">
+											Parent Name
+										</div>
+										<div class="cell">
+											Email
+										</div>
+										<div class="cell">
+											Enrollment Status
+										</div>
+										<div class="cell">
+											Class Applied
+										</div>
+										<div class="cell">
+											Seats
+										</div>
+										<div class="cell">
+											View Profile
+										</div>
+										<div class="cell">
+											Action
+										</div>
+										<div class="cell">
+											Admission Deadline
+										</div>
+										<div class="cell">
+											Assessment
+										</div>
+									</div>
+									<div class="resrow">
+										<div class="cell" data-title="S.No.">
+											1.
+										</div>										
+										<div class="cell" data-title="Candidate Name">
+											Karthikeyan
+										</div>
+										<div class="cell" data-title="Parent Name">
+											Periyasamy
+										</div>
+										<div class="cell" data-title="Email">
+											<span class="wrap">
+												<span class="overflow"><a href="mailto:karthikeyan.periyasamy@gmail.com" class="overflow">karthikeyan.periyasamy@gmail.com</a></span>
+												<span class='tbltooltip'>karthikeyan.periyasamy@gmail.com</span>
+											</span>	
+										</div>
+										<div class="cell" data-title="Enrollment Status">
+											In Review
+										</div>
+										<div class="cell" data-title="Class Applied">
+											LKG
+										</div>
+										<div class="cell" data-title="Seats">
+											20
+										</div>
+										<div class="cell" data-title="View Profile">
+											<img width="23px" src="../assets/img/view_icon.svg" alt="View Profile" title="View Profile" />
+										</div>
+										<div class="cell" data-title="Action">
+											<img width="23px" src="../assets/img/approve_icon.svg" alt="Approve" title="Approve" /> <img width="26px" src="../assets/img/reject_icon.svg" alt="Reject" title="Reject" />
+										</div>
+										<div class="cell" data-title="Admission Deadline">
+											22-01-2021
+										</div>
+										<div class="cell" data-title="Assessment" >
+											<button class="btn"><img width="26px" src="../assets/img/schedule_icon.svg" onclick="location.href='admmgmt_sch_interview.html'" alt="Schedule Interview" title="Schedule Interview"></button>
+										</div>
+									</div>
+									<div class="resrow">
+										<div class="cell" data-title="S.No.">
+											2.
+										</div>										
+										<div class="cell" data-title="Candidate Name">
+											Karthikeyan
+										</div>
+										<div class="cell" data-title="Parent Name">
+											Periyasamy
+										</div>
+										<div class="cell" data-title="Email">
+											<span class="wrap">
+												<span class="overflow"><a href="mailto:karthi@gmail.com" class="overflow">karthi@gmail.com</a></span>
+												<span class='tbltooltip'>karthi@gmail.com</span>
+											</span>	
+										</div>
+										<div class="cell" data-title="Enrollment Status">
+											In Review
+										</div>
+										<div class="cell" data-title="Class Applied">
+											LKG
+										</div>
+										<div class="cell" data-title="Seats">
+											20
+										</div>
+										<div class="cell" data-title="View Profile">
+											<img width="23px" src="../assets/img/view_icon.svg" alt="View Profile" title="View Profile" />
+										</div>
+										<div class="cell" data-title="Action">
+											<img width="23px" src="../assets/img/approve_icon.svg" alt="Approve" title="Approve" /> <img width="26px" src="../assets/img/reject_icon.svg" alt="Reject" title="Reject" />
+										</div>
+										<div class="cell" data-title="Admission Deadline">
+											22-01-2021
+										</div>
+										<div class="cell" data-title="Assessment">
+											<button class="btn"><img width="26px" src="../assets/img/schedule_icon.svg" onclick="location.href='admmgmt_sch_interview.html'" alt="Schedule Interview" title="Schedule Interview"></button>
+										</div>
+									</div>
+									<div class="resrow">
+										<div class="cell" data-title="S.No.">
+											3.
+										</div>										
+										<div class="cell" data-title="Candidate Name">
+											Karthikeyan
+										</div>
+										<div class="cell" data-title="Parent Name">
+											Periyasamy
+										</div>
+										<div class="cell" data-title="Email">
+											<span class="wrap">
+												<span class="overflow"><a href="mailto:karthi@gmail.com" class="overflow">karthi@gmail.com</a></span>
+												<span class='tbltooltip'>karthi@gmail.com</span>
+											</span>	
+										</div>
+										<div class="cell" data-title="Enrollment Status">
+											In Review
+										</div>
+										<div class="cell" data-title="Class Applied">
+											LKG
+										</div>
+										<div class="cell" data-title="Seats">
+											20
+										</div>
+										<div class="cell" data-title="View Profile">
+											<img width="23px" src="../assets/img/view_icon.svg" alt="View Profile" title="View Profile" />
+										</div>
+										<div class="cell" data-title="Action">
+											<img width="23px" src="../assets/img/approve_icon.svg" alt="Approve" title="Approve" /> <img width="26px" src="../assets/img/reject_icon.svg" alt="Reject" title="Reject" />
+										</div>
+										<div class="cell" data-title="Admission Deadline">
+											22-01-2021
+										</div>
+										<div class="cell" data-title="Assessment">
+											<button class="btn"><img width="26px" src="../assets/img/schedule_icon.svg" onclick="location.href='admmgmt_sch_interview.html'" alt="Schedule Interview" title="Schedule Interview"></button>
+										</div>
+									</div>
+									
+									
+								</div>
+							
+						</div>	
+						<div class="widjetfooter text-center">
+							<div class="pagination" id="pagination">
+							  <a href="#">&laquo;</a>
+							  <a href="#" class="active">1</a>
+							  <a href="#" >2</a>
+							  <a href="#">3</a>
+							  <a href="#">4</a>
+							  <a href="#">5</a>							
+							  <a href="#">&raquo;</a>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="col-lg-12 mt-4">
+					<div class="widjet">
+						<div class="widjethdr dispflex">
+							<div style="width:90%;">
+								<span class="iconsect blubg" style="padding-left:12px;"><i class="fas fa-id-badge" style="font-size:1.5rem"></i></span>
+								<h1>Candidate Profile</h1>
+							</div>
+						</div>	
+						<div class="p-3 widjetcontent">
+							<form action="" method="post" id="stuprofile" accept-charset="utf-8">				
+								<div class="form-row ">
+									<div class="form-group input-group col-md-6 pr-md-3 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="stname" value="Karthikeyan" class="form-control form-input" id="stnameid" disabled  placeholder="Student Name" />
+											<label for="stnameid">Student Name <span class="required">*</span></label>
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="enrmStatus" value="Raj" class="form-control form-input" id="enrmStatusid" disabled  placeholder="Enrollment Status" />
+											<label for="enrmStatusid">Enrollment Status <span class="required">*</span></label>
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6 pr-md-3 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="stdob" value="25/10/2016" class="form-control form-input" id="stdob" disabled  placeholder="Date of Birth" />
+											<label for="stdobid">Date of Birth <span class="required">*</span></label>
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="clapp" value="Pre-KG" class="form-control form-input" id="clappid" disabled  placeholder="Class Applied" />
+											<label for="clappid">Class Applied <span class="required">*</span></label>
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6 pr-md-3 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="gndr" value="Male" class="form-control form-input" id="gndrid" disabled  placeholder="Gender" />
+											<label for="gndrid">Gender <span class="required">*</span></label>
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="bldgrp" value="B+" class="form-control form-input" id="bldgrpid" disabled  placeholder="Blood Group" />
+											<label for="bldgrpid">Blood Group <span class="required">*</span></label>
+										</span>
+									</div>	
+									<div class="blutitle col-md-12">Parent Details</div>	
+									<div class="form-group input-group col-md-6 pr-md-3 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="pgname" value="Periyasamy" class="form-control form-input" id="pgnameid" disabled  placeholder="Parent / Guardian Name" />
+											<label for="pgnameid">Parent / Guardian Name <span class="required">*</span></label>
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="relation" value="Father" class="form-control form-input" id="relid" disabled  placeholder="Relation" />
+											<label for="relid">Relation <span class="required">*</span></label>
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6 pr-md-3 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="occ" value="Govt" class="form-control form-input" id="occid" disabled  placeholder="Occupation" />
+											<label for="occid">Occupation <span class="required">*</span></label>
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="nationality" value="Indian" class="form-control form-input" id="natid" disabled  placeholder="Nationality" />
+											<label for="natid">Nationality <span class="required">*</span></label>
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6 pr-md-3 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="religion" value="Hindu" class="form-control form-input" id="relgid" disabled  placeholder="Religion" />
+											<label for="relgid">Religion <span class="required">*</span></label>
+										</span>
+									</div>
+									
+									<div class="form-group input-group col-md-6 pr-md-3 mt-3">						
+										<span class="has-float-label">
+											<input type="email" name="ptemail" value="parentmail@gmail.com" class="form-control form-input" id="ptemailid" disabled  placeholder="Email" />
+											<label for="ptemailid">Email <span class="required">*</span></label>
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6 pr-md-3 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="ptph" value="-" class="form-control form-input" id="ptphid" disabled  placeholder="Phone" />
+											<label for="ptphid">Phone <span class="required">*</span></label>
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6  mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="ptmbn" value="+91 99999 99999" class="form-control form-input" id="ptmbnid" disabled  placeholder="Mobile #" />
+											<label for="ptmbnid">Mobile # <span class="required">*</span></label>
+										</span>
+									</div>	
+									<div class="form-group input-group col-md-12 mt-3">	
+										<span class="has-float-label">
+											<input type="text" name="stadr" value="DABC Acacia, Medavakkam main road, Mambakkam, Chennai - 600127" class="form-control form-input" id="stadrid" disabled  placeholder="Address Details" />
+											<label for="stadrid">Address Details <span class="required">*</span></label>
+											
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6 pr-md-3 mt-3">	
+										<span class="has-float-label">
+											<img src="../assets/img/img_avatar.png" alt="Avatar" class="mt-3" width="110" height="110">
+											<label for="ptmbnid">Photo<span class="required">*</span></label>
+										</span>
+										<div class="photobrd" style="display:none;">
+											<img src="../assets/img/img_avatar.png" alt="phoavatar" class="avatar">
+											<div class="card card-block p-3 w-100 mx-auto custbtn text-center uploadphoto">
+												<i class="fa fa-upload fa-2x" aria-hidden="true"></i> Upload Photo
+											</div>												
+										</div>
+									</div>
+									
+								</div>
+							</form>
+						</div>
+						<div class="widjetfooter text-right">
+							<div class="dk_iconsml">
+							<button type="button" class="btn btnsml edbtn" onclick="editForm()"><i class="fas fa-edit"></i> <span>Edit</span></button>
+							<div style="display:none"><button type="button" class="btn btnsml" id="svbtn" onclick="saveForm()"><i class="far fa-save"></i> <span>Save</span></button>
+							<button type="button" class="btn btncl" id="clbtn"><i class="far fa-times-circle"></i> <span>Cancel</span></button>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 mt-4">
+					<div class="widjet">
+						<div class="widjethdr dispflex">
+							<div style="width:90%;">
+								<span class="iconsect blubg"><i class="fas fa-file-signature"></i></span>
+								<h1>Candidate Enrollment Details</h1>
+							</div>
+						</div>	
+						<div class="p-3 widjetcontent">
+							<form action="" method="post" id="schAdmin" accept-charset="utf-8">				
+								<div class="form-row ">
+									<div class="form-group input-group col-md-6 pr-md-3 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="rollno" value="RN1001" class="form-control form-input" id="rnid" disabled  placeholder="Roll No. allocated" />
+											<label for="rnid">Roll No. allocated <span class="required">*</span></label>
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="joindate" value="10/04/2021" class="form-control form-input" id="jdid" disabled  placeholder="Join Date" />
+											<label for="jdid">Join Date <span class="required">*</span></label>
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6 pr-md-3 mt-3">						
+										<span class="has-float-label">
+											<input type="email" name="clname" value="Pre-KG" class="form-control form-input" id="cnid" disabled  placeholder="Class Name" />
+											<label for="cnid">Class Name <span class="required">*</span></label>
+										</span>
+									</div>
+									<div class="form-group input-group col-md-6 mt-3">						
+										<span class="has-float-label">
+											<input type="text" name="division" value="A" class="form-control form-input" id="divid" disabled  placeholder="Division" />
+											<label for="divid">Division <span class="required">*</span></label>
+										</span>
+									</div>									
+								</div>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		</div>
+		<footer>
+			&copy; Vidhyaan.
+		</footer>
+	</div>
+</div>
+<script src="../assets/js/adminscript.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="../assets/js/stuadmission.js"></script>
+</body>
+</html>
